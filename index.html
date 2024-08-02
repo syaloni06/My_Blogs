@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post Website</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header id="header">
+      <!--Navbar for redirecting any part of my website through the following list-->
+      <nav class="navbar">
+        <div class="logo">Blog</div>
+        <input type="checkbox" id="click" />
+        <label for="click"><img src="menu.png" alt="menu" /></label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!--Dropdown part-->
+          <li>
+            <select name="blogs-nav" id="blogs-nav">
+              <option value="Blogs">Blogs</option>
+              <option value="Kashmir"><a href="#firstBlog">Kashmir</a></option>
+              <option value="SwitzerLand">
+                <a href="#secondBlog">SwitzerLand</a>
+              </option>
+              <option value="Kolkata"><a href="#thirdBlog">Kolkata</a></option>
+            </select>
+          </li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!--Header part-->
+      <div class="heading">
+        <h1><i>The Diary of Syaloni</i></h1>
+        <p>
+          Welcome to my diary! Join me as I travel the world and taste delicious
+          food. I'll share my experiences, tips, and favorite discoveries to
+          inspire your own adventures. Whether you love exploring new places,
+          trying different cuisines, or hunting for great buys, there's
+          something here for you!
+        </p>
+      </div>
+    </header>
+    <!-- <hr/> -->
+    <main>
+      <!--semantic structure for the blog posts section-->
+      <section class="blogs">
+        <article class="firstBlog">
+          <h2>Exploring the Enchanting Beauty of Kashmir</h2>
+
+          <p>
+            Nestled in the lap of the Himalayas, Kashmir is a region of
+            breathtaking beauty and rich cultural heritage. In this post, we
+            explore the allure of Kashmir and what makes it a must-visit
+            destination.
+          </p>
+          <!--adding the related image-->
+          <img src="kashmir.jpg" alt="View of Kashmir" />
+
+          <p>
+            From the serene waters of Dal Lake to the snow-capped peaks of
+            Gulmarg, Kashmir captivates visitors with its stunning landscapes
+            and warm hospitality. As you meander through its winding valleys and
+            explore its ancient Mughal gardens, you'll be greeted by a tapestry
+            of colors and aromas that will leave you spellbound. But Kashmir is
+            more than just a picturesque paradise; it's a land steeped in
+            history and tradition. From the vibrant markets of Srinagar to the
+            tranquil monasteries of Ladakh, every corner of Kashmir tells a
+            story of resilience and perseverance. As you sip on a cup of
+            steaming Kahwa tea and watch the sunset over the majestic mountains,
+            you'll understand why Kashmir is often called "Paradise on Earth."
+          </p>
+          <!--adding related videos embedded from youtube-->
+          <iframe
+            src="https://www.youtube.com/embed/47AzGOBDe-Y?si=y-kFAXJe-RyDna8l"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          <p>
+            Whether you're seeking adventure in the great outdoors or seeking
+            solace in the tranquility of nature, Kashmir offers something for
+            everyone.
+          </p>
+        </article>
+
+        <article class="secondBlog">
+          <h2>A Journey Through the Stunning Landscapes of Switzerland</h2>
+
+          <p>
+            Explore the captivating beauty and timeless charm of Switzerland, a
+            country renowned for its stunning landscapes, cultural treasures,
+            and unparalleled hospitality.
+          </p>
+          <!--adding the related image-->
+          <img src="switzerland.jpeg" alt="View of Switzerland" />
+
+          <p>
+            Switzerland, with its pristine lakes, snow-capped peaks, and
+            picturesque villages, is a haven for nature lovers and adventure
+            enthusiasts alike. From the majestic Matterhorn to the crystal-clear
+            waters of Lake Geneva, every corner of Switzerland offers a
+            postcard-perfect view.But Switzerland is not just about its natural
+            beauty; it's also a land of rich cultural heritage and culinary
+            delights. Whether you're exploring the charming streets of Zurich,
+            indulging in world-class chocolate in Lucerne, or skiing in the
+            Swiss Alps, you'll be enchanted by the country's unique blend of
+            tradition and modernity.As you journey through Switzerland, you'll
+            be greeted by friendly locals, cozy chalets, and a sense of
+            tranquility that will stay with you long after you've returned home.
+          </p>
+          <!--adding related videos embedded from youtube-->
+          <iframe
+            src="https://www.youtube.com/embed/linlz7-Pnvw?si=M006qu5lMZ_5rUXg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          <p>
+            Whether you're sipping on a glass of fine Swiss wine or hiking
+            through lush alpine meadows, Switzerland offers an experience like
+            no other.
+          </p>
+        </article>
+
+        <article class="thirdBlog">
+          <h2>Exploring the Delicious Diversity of Kolkata</h2>
+          <ul>
+            <li>
+              Rasgulla is soft and spongy balls of cottage cheese soaked in
+              sugar syrup, a classic Bengali sweet.
+            </li>
+            <li>
+              Kolkata-style biryani is a flavorful rice dish cooked with
+              marinated meat, fragrant spices, and aromatic rice, often served
+              with a side of yogurt-based salad and boiled eggs.
+            </li>
+          </ul>
+          <!--adding the related image-->
+          <img src="food.jpeg" alt="delicious food of kolkata" />
+
+          <p>
+            Kolkata, often hailed as the "City of Joy," is a paradise for food
+            lovers. From spicy street food to sumptuous Bengali delicacies,
+            Kolkata offers a gastronomic journey like no other. Start your
+            culinary adventure with a visit to the bustling streets of Park
+            Street, where you'll find iconic restaurants serving up everything
+            from Kolkata biryani to mouthwatering kebabs.But the heart and soul
+            of Kolkata's food scene lie in its vibrant street markets. Don't
+            miss the chance to sample Kolkata's famous sweets, from rasgulla to
+            sandesh, at legendary sweet shops like KC Das and Bhim Chandra
+            Nag.As you explore the city's culinary delights, you'll discover
+            that food is more than just nourishment in Kolkata—it's a way of
+            life.
+          </p>
+          <!--adding related videos embedded from youtube-->
+          <iframe
+            src="https://www.youtube.com/embed/UYxgsEGNkfw?si=8zvcqYhV4Ip4p2SK"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          <p>
+            Whether you're savoring a bowl of piping hot phuchka by the Hooghly
+            River or indulging in a lavish Bengali feast at a traditional
+            thakurbari, Kolkata's food scene promises to tantalize your taste
+            buds and leave you craving for more.
+          </p>
+        </article>
+      </section>
+
+      <section class="info">
+        <article class="about">
+          <h2>About Me</h2>
+
+          <p>
+            Hello! I'm Syaloni Barman, a passionate traveler and avid foodie.
+            Ever since I was young, I've been fascinated by the diverse
+            cultures, landscapes, and culinary delights our world has to offer.
+            My journey has taken me to bustling cities, serene countryside, and
+            everything in between, always with a keen eye (and taste buds) for
+            the unique flavors and experiences that define each destination.
+          </p>
+
+          <p>
+            The purpose of this blog is to provide an immersive and informative
+            guide for anyone who shares my love for travel and food. Whether
+            you're looking for hidden gems in popular destinations, detailed
+            travel itineraries, or reviews of local cuisines and street food,
+            you'll find it all here.
+          </p>
+
+          <p>As a traveler and foodie, you all can expect</p>
+
+          <ul>
+            <li>
+              <!--strong tag used to indicate the important information-->
+              <strong>Travel Guides and Tips:</strong> Detailed guides on
+              must-visit locations, off-the-beaten-path adventures, and
+              practical travel tips to help you make the most of your trips.
+            </li>
+            <li>
+              <!--strong tag used to indicate the important information-->
+              <strong>Culinary Experiences:</strong> Reviews and stories about
+              local dishes, street food, and fine dining from around the world.
+              Discover new recipes, food traditions, and the best places to eat.
+            </li>
+          </ul>
+
+          <p>
+            Join me as I explore the world, one bite and one step at a time. I
+            hope this blog inspires you to embark on your own adventures and
+            savor the diverse and delicious experiences that travel and food
+            have to offer.
+          </p>
+        </article>
+
+        <article class="contact">
+          <div class="connect">
+            <h2>Contact with Me</h2>
+            <p>
+              If you have any questions, suggestions, or just want to say hello,
+              feel free to contact me at: <br />
+              <a href="mailto:syalonib@gmail.com"
+                ><div id="email-id">
+                  <img src="mail.png" alt="syalonib@gmail.com" />
+                  <p>Email</p>
+                </div></a
+              >
+            </p>
+
+            <p>
+              Follow me on social media to stay updated on my latest adventures
+              and culinary discoveries:
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/syalon_i/?hl=en"
+                  target="_blank"
+                >
+                  <div id="instagram">
+                    <img src="instagram.png" alt="Instagram" />
+                    <p id="i">Instagram</p>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100009206428249"
+                  target="_blank"
+                  ><div id="facebook">
+                    <img src="facebook.png" alt="Facebook" />
+                    <p id="f">Facebook</p>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/syaloni-barman/"
+                  target="_blank"
+                  ><div id="linkedin">
+                    <img src="linkedin.png" alt="Linkedin" />
+                    <p id="l">Linkedin</p>
+                  </div></a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--collect required information through form-->
+          <div class="feedback">
+            <h2>Feedback</h2>
+            <form action="">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder=" Enter Your Name"
+                required
+              />
+              <br />
+              <br />
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder=" Enter Your Email"
+                required
+                aria-colspan="40"
+              />
+              <br />
+              <br />
+              <label for="message">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="40"
+                rows="4"
+                placeholder=" Give Your Feedback"
+                required
+              ></textarea>
+              <br />
+              <br />
+              <div id="button">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </article>
+      </section>
+    </main>
+    <!-- <hr /> -->
+    <!--footer part-->
+    <footer id="footer">
+      <p>&copy; Copyright 2024 Syaloni Barman</p>
+    </footer>
+  </body>
+</html>

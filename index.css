@@ -1,0 +1,623 @@
+/* Making margin and padding default befor styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Defining the parent layout */
+body {
+  background-color: #c8dad9;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template:
+    "header"
+    "blogs"
+    "blogs"
+    "info"
+    "footer";
+  gap: 20px 0;
+  height: 100vh;
+}
+
+/* Header layout */
+#header {
+  padding-top: 60px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-area: header;
+}
+
+/* Styling the navbar of the website */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  /* Layout for list element */
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #007cb9;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+/* Designing the logo for navbar */
+.logo {
+  padding: 0 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* Designing the image for menubar */
+.navbar img {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  display: none; /* Hiding the image from navbar in case of PC layout */
+}
+
+/* Hiding the checkbox from navbar in case of PC layout */
+#click {
+  display: none;
+}
+
+/* Styling the list items */
+.navbar ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  justify-content: end;
+  align-items: center;
+}
+
+/* Styling the link content */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  height: 50px;
+  align-content: center;
+  padding: 0 20px;
+}
+
+/* Changing list element's background-color through hover Effect for better visuality */
+.navbar a:hover {
+  background-color: #005689;
+}
+
+/* Styling the dropdown section */
+#blogs-nav {
+  background-color: #007cb9;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px 0;
+}
+
+/* Hover Effect on dropdown section for visuality */
+#blogs-nav:hover {
+  background-color: #005689;
+  height: 100%;
+}
+
+/* Styling header part for introduction */
+.heading {
+  background-color: rgba(255, 255, 255, 0.756);
+  background-image: url(heading.jpeg);
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  background-size: cover;
+  height: fit-content;
+  padding: 10px;
+  margin: 0 20px;
+  font-family: Verdana, Tahoma, sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: bold;
+  color: rgb(11, 0, 0);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.32); /* Using shadow effect on box */
+}
+
+/* Styling heading section */
+.heading h1 {
+  margin-bottom: 10px;
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.434); /* Using shadow effect on text */
+}
+
+/* Main Layout */
+main {
+  display: grid;
+  grid-template:
+    "blogs"
+    "blogs"
+    "info";
+  gap: 20px 0;
+}
+
+/* Designing and layouting the blogs part */
+.blogs {
+  height: max-content;
+  margin: 0 10px;
+  padding: 10px;
+  display: grid;
+  grid-template: "firstBlog secondBlog thirdBlog";
+  gap: 15px;
+  grid-area: blogs;
+}
+
+/* Styling the firstblog portion */
+.firstBlog {
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.756);
+  background-color: rgba(255, 255, 255, 0.756);
+  grid-area: firstBlog;
+  padding: 10px;
+  /* Layouting the inside element */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.32); /* Using shadow effect on box */
+  transition: all 0s linear 0s; /* Transition functionality along z axis */
+}
+
+/* Using transform translate through hover Effect for better visuality */
+.firstBlog:hover {
+  transform: perspective(400px) translateZ(20px);
+}
+
+/* Styling heading part */
+.firstBlog h2 {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.32); /* Using shadow effect on text */
+  font-size: 30px;
+}
+
+/* Adjusting text part */
+.firstBlog p {
+  text-align: justify;
+}
+
+/* Adjusting image part */
+.firstBlog img {
+  width: 100%;
+  height: 200px;
+  transition: all 2s linear 0s; /* Transition functionality on 3D transform */
+}
+
+/* Using transform rotate3D through hover Effect for better visuality */
+.firstBlog img:hover {
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+
+/* Styling the secondblog portion */
+.secondBlog {
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.756);
+  background-color: rgba(255, 255, 255, 0.756);
+  grid-area: secondBlog;
+  padding: 10px;
+  /* Layouting the inside element */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.32); /* Using shadow effect on box */
+  transition: all 0s linear 0s; /* Transition functionality along z axis */
+}
+
+/* Using transform translate through hover Effect for better visuality */
+.secondBlog:hover {
+  transform: perspective(400px) translateZ(20px);
+}
+
+/* Styling heading part */
+.secondBlog h2 {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.32); /* Using shadow effect on text */
+  font-size: 30px;
+}
+
+/* Adjusting text part */
+.secondBlog p {
+  text-align: justify;
+}
+
+/* Adjusting image part */
+.secondBlog img {
+  width: 100%;
+  height: 200px;
+  transition: all 2s linear 0s; /* Transition functionality on 3D transform */
+}
+
+/* Using transform rotate3D through hover Effect for better visuality */
+.secondBlog img:hover {
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+
+/* Styling the thirdblog portion */
+.thirdBlog {
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.756);
+  background-color: rgba(255, 255, 255, 0.756);
+  grid-area: thirdBlog;
+  padding: 10px;
+  /* Layouting the inside element */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.32); /* Using shadow effect on box */
+  transition: all 0s linear 0s; /* Transition functionality along z axis */
+}
+
+/* Using transform translate through hover Effect for better visuality */
+.thirdBlog:hover {
+  transform: perspective(400px) translateZ(20px);
+}
+
+/* Styling heading part */
+.thirdBlog h2 {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.32); /* Using shadow effect on text */
+  font-size: 30px;
+}
+
+/* Adjusting text part */
+.thirdBlog p {
+  text-align: justify;
+  margin: 15px 0;
+}
+
+/* Adjusting list part */
+.thirdBlog li {
+  text-align: justify;
+  margin: 15px 0;
+  list-style-position: inside;
+}
+
+/* Adjusting image part */
+.thirdBlog img {
+  width: 100%;
+  height: 200px;
+  transition: all 2s linear 0s; /* Transition functionality on 3D transform */
+}
+
+/* Using transform rotate3D through hover Effect for better visuality */
+.thirdBlog img:hover {
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+
+/* Adjusting iframe portion for all blogs */
+iframe {
+  width: 100%;
+  height: 200px;
+}
+
+/* Styling and layouting the info part */
+.info {
+  grid-area: info;
+  display: grid;
+  grid-template:
+    "about"
+    "contact";
+  gap: 15px;
+  margin: 0 10px;
+  margin-bottom: 60px;
+  padding: 10px;
+}
+
+/* Designing the about section */
+.about {
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.756);
+  background-color: rgba(255, 255, 255, 0.756);
+  grid-area: about;
+  padding: 10px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.32); /* Using shadow effect on box */
+}
+
+/* Styling heading part */
+.about h2 {
+  font-size: 30px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.32); /* Using shadow effect on text */
+}
+
+/* Adjusting the text part */
+.about p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+/* Adjusting list part */
+.about li {
+  text-align: justify;
+  list-style-position: inside;
+  margin: 10px 0;
+}
+
+/* Designing the contact section */
+.contact {
+  height: auto;
+  grid-area: contact;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+/* Styling the connect section */
+.connect {
+  grid-row: 1;
+  grid-column: 1;
+  border: 1px solid rgba(255, 255, 255, 0.756);
+  background-color: rgba(255, 255, 255, 0.756);
+  padding: 10px;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.32); /* Using shadow effect on box */
+  /* Layouting the inside element */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Styling heading part */
+.connect h2 {
+  font-size: 30px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.32); /* Using shadow effect on text */
+  margin-bottom: 10px;
+}
+
+/* Adjusting image part */
+.connect img {
+  height: 50px;
+  width: 50px;
+}
+
+/* Adjusting text part */
+.connect p {
+  font-size: 20px;
+}
+
+/* Adjusting list part */
+.connect ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Designing the mail icon */
+#email-id {
+  height: 100px;
+  width: 100px;
+  /* Layouting the inside element */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adjusting and styling the link part */
+.connect a {
+  text-decoration: none;
+  color: black;
+  margin: 0 30px;
+}
+
+/* Designing the instagram icon */
+#instagram {
+  height: 100px;
+  width: 100px;
+  /* Layouting the inside element */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Designing the facebook icon */
+#facebook {
+  height: 100px;
+  width: 100px;
+  /* Layouting the inside element */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Designing the linkedin icon */
+#linkedin {
+  height: 100px;
+  width: 100px;
+  /* Layouting the inside element */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling the feedback section */
+.feedback {
+  grid-row: 1;
+  grid-column: 2/4;
+  border: 1px solid rgba(255, 255, 255, 0.756);
+  background-color: rgba(255, 255, 255, 0.756);
+  padding: 10px;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.32); /* Using shadow effect on box */
+  /* Layouting the inside element */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling heading part */
+.feedback h2 {
+  font-size: 30px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.32); /* Using shadow effect on text */
+  margin-bottom: 20px;
+}
+
+/* Designing the form */
+.feedback form {
+  border: 2px solid black;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Adjusting the label */
+.feedback label {
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Adjusting the first input element */
+.feedback input:first-of-type {
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: justify;
+}
+
+/* Adjusting the second input element */
+.feedback input:nth-of-type(2) {
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: justify;
+}
+
+/* Adjusting the textarea */
+.feedback textarea {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/* Styling the button */
+.feedback button {
+  height: 30px;
+  width: 70px;
+  font-weight: bolder;
+  font-size: 15px;
+  background-color: #007cb9;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Layouting the inside element */
+#button {
+  display: flex;
+  justify-content: center;
+}
+
+/* footer part */
+#footer {
+  display: grid;
+  justify-content: end;
+  font-weight: bold;
+  font-style: italic;
+  grid-area: footer;
+  width: 100%;
+  padding: 10px;
+  background-color: #007cb9;
+  color: white;
+  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+}
+
+/* Making website responsive when width is less than 950px */
+@media (max-width: 800px) {
+  /* Displaying menu bar */
+  .navbar img {
+    display: block;
+    margin: 0 20px;
+  }
+
+  /* Adjusting navbar list */
+  .navbar ul {
+    position: fixed;
+    top: 50px;
+    right: -100%;
+    height: 100vh;
+    width: 30%;
+    display: block;
+    text-align: center;
+    background-color: #007cb9;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+
+  /* Designing checkbox for menu bar functionality */
+  #click:checked ~ ul {
+    right: 0%;
+  }
+
+  /* Changing background-color through hover Effect for better visuality */
+  .navbar a:hover {
+    background-color: #005689;
+    width: 100%;
+  }
+
+  /* Adjusting dropdown section */
+  #blogs-nav {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  /* Adjusting header part */
+  #header {
+    display: flex;
+    padding: 0;
+  }
+
+  .heading {
+    padding: 0;
+    margin-top: 60px;
+  }
+
+  /* Adjusting blogs part */
+  .blogs {
+    display: grid;
+    grid-template:
+      "firstBlog"
+      "secondBlog"
+      "thirdBlog";
+  }
+
+  .firstBlog p {
+    margin: 15px 0;
+  }
+
+  .secondBlog p {
+    margin: 15px 0;
+  }
+
+  /* Adjusting contact part */
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Making website responsive when width is less than 950px */
+@media (max-width: 420px) {
+  /* Adjusting navbar list */
+  .navbar ul {
+    width: 100%;
+  }
+}
